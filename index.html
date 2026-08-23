@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>区域平台售前作业 · 司旭焱</title>
+<style>
+  :root {
+    --ink: #1c222b;
+    --body: #3a4150;
+    --muted: #6b7380;
+    --line: #d5dbe3;
+    --bg: #f3f5f7;
+    --card: #fff;
+    --accent: #3d5a78;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+    color: var(--body);
+    background: var(--bg);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .top { background: var(--accent); color: #fff; padding: 28px 20px 24px; }
+  .wrap { max-width: 1000px; margin: 0 auto; }
+  .top h1 { margin: 8px 0 6px; font-size: 24px; font-weight: 700; color: #fff; }
+  .meta { margin: 0; font-size: 14px; color: #fff; }
+  .badge {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 2px 8px;
+    margin: 0 6px 6px 0;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  nav {
+    position: sticky; top: 0; z-index: 9;
+    background: #fff; border-bottom: 1px solid var(--line);
+  }
+  nav .wrap { display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 10px 20px; }
+  nav a { color: var(--accent); text-decoration: none; font-size: 13px; font-weight: 600; }
+  main { padding: 12px 20px 48px; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    margin: 14px 0;
+    padding: 22px 24px;
+  }
+  h2 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 8px;
+  }
+  h3 { margin: 18px 0 8px; font-size: 15px; color: var(--ink); }
+  p { margin: 8px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 10px 0; }
+  th, td { border: 1px solid var(--line); padding: 8px 9px; vertical-align: top; text-align: left; }
+  th { background: #e8eef3; color: var(--accent); font-weight: 700; }
+  .note { font-size: 13px; color: var(--muted); }
+  .foot { font-size: 13px; color: var(--muted); margin-top: 14px; }
+
+  .flow-svg { display: block; width: 100%; max-width: 920px; height: auto; margin: 8px auto 12px; }
+  .refs { font-size: 13px; line-height: 1.75; padding-left: 1.4em; }
+  .refs li { margin: 4px 0; }
+  .sec-ref { font-size: 13px; color: var(--muted); margin-top: 12px; }
+  @media (max-width: 860px) {
+    .flow-svg { min-height: 280px; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <span class="badge">个人作品</span>
+    <span class="badge">仅公开资料</span>
+    <span class="badge">不是投标文件</span>
+    <h1>区域平台售前作业</h1>
+    <p class="meta">司旭焱 · 2026.08 · 应聘特来电平台大区售前经理 · 数据查阅至 2026-08-23</p>
+  </div>
+</header>
+<nav>
+  <div class="wrap">
+    <a href="#s1">1. 说明</a>
+    <a href="#s2">2. 底层逻辑</a>
+    <a href="#s3">3. 充电运营</a>
+    <a href="#s4">4. 综合能源</a>
+    <a href="#s5">5. 城市停车</a>
+    <a href="#s6">6. 参考文献</a>
+  </div>
+</nav>
+<main class="wrap">
+
+<section id="s1">
+  <h2>1. 说明</h2>
+  <p>按平台大区售前的作业顺序，用公开信息走一遍三类客户：充电运营、综合能源、城市停车。</p>
+  <p>先判断客户主要买哪一类，再用同一套步骤往下问。</p>
+  <p>没有场站数据，不算利用率，也不写报价和工期。</p>
+</section>
+
+<section id="s2">
+  <h2>2. 底层逻辑</h2>
+  <p>先判断主场景，再进一条；可以叠加第二条，不把三类同时当主场景。进入之后，六步相同。竞品放在第 5 步，和方案对照，不单独写成行业研报。</p>
+  <svg class="flow-svg" viewBox="0 0 920 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="主场景分流后进入同一套六步">
+    <defs>
+      <style>
+        .fb { fill: #eef3f7; stroke: #3d5a78; stroke-width: 2; }
+        .fn { fill: #fafbfc; stroke: #c5cdd6; stroke-width: 1.5; }
+        .fs { fill: #3d5a78; }
+        .ft { font-family: Microsoft YaHei, PingFang SC, sans-serif; }
+      </style>
+    </defs>
+    <rect class="fb" x="280" y="8" width="360" height="56" rx="4"/>
+    <text class="ft" x="460" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="#1c222b">判断主场景</text>
+    <text class="ft" x="460" y="52" text-anchor="middle" font-size="12" fill="#3a4150">这位客户今天主要要解决什么？</text>
+    <line x1="460" y1="64" x2="460" y2="88" stroke="#3d5a78" stroke-width="2"/>
+    <line x1="150" y1="88" x2="770" y2="88" stroke="#3d5a78" stroke-width="2"/>
+    <line x1="150" y1="88" x2="150" y2="108" stroke="#3d5a78" stroke-width="2"/>
+    <line x1="460" y1="88" x2="460" y2="108" stroke="#3d5a78" stroke-width="2"/>
+    <line x1="770" y1="88" x2="770" y2="108" stroke="#3d5a78" stroke-width="2"/>
+    <rect class="fn" x="40" y="108" width="220" height="88" rx="4"/>
+    <rect class="fn" x="350" y="108" width="220" height="88" rx="4"/>
+    <rect class="fn" x="660" y="108" width="220" height="88" rx="4"/>
+    <text class="ft" x="150" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#3d5a78">充电运营</text>
+    <text class="ft" x="150" y="154" text-anchor="middle" font-size="12" fill="#3a4150">收钱、运维、找桩</text>
+    <text class="ft" x="460" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#3d5a78">综合能源</text>
+    <text class="ft" x="460" y="154" text-anchor="middle" font-size="12" fill="#3a4150">电源、容量、光储</text>
+    <text class="ft" x="770" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#3d5a78">城市停车</text>
+    <text class="ft" x="770" y="154" text-anchor="middle" font-size="12" fill="#3a4150">车位、对账、报表</text>
+    <text class="ft" x="150" y="176" text-anchor="middle" font-size="11" fill="#6b7380">可叠加综合能源</text>
+    <text class="ft" x="770" y="176" text-anchor="middle" font-size="11" fill="#6b7380">可叠加充电运营</text>
+    <line x1="150" y1="196" x2="150" y2="228" stroke="#3d5a78" stroke-width="2"/>
+    <line x1="460" y1="196" x2="460" y2="228" stroke="#3d5a78" stroke-width="2"/>
+    <line x1="770" y1="196" x2="770" y2="228" stroke="#3d5a78" stroke-width="2"/>
+    <line x1="150" y1="228" x2="770" y2="228" stroke="#3d5a78" stroke-width="2"/>
+    <line x1="460" y1="228" x2="460" y2="248" stroke="#3d5a78" stroke-width="2"/>
+    <rect class="fb" x="300" y="248" width="320" height="36" rx="4"/>
+    <text class="ft" x="460" y="272" text-anchor="middle" font-size="14" font-weight="700" fill="#1c222b">进入后走同一套六步</text>
+    <line x1="460" y1="284" x2="460" y2="304" stroke="#3d5a78" stroke-width="2"/>
+    <rect class="fs" x="16" y="304" width="140" height="44" rx="3"/>
+    <rect class="fs" x="166" y="304" width="140" height="44" rx="3"/>
+    <rect class="fs" x="316" y="304" width="140" height="44" rx="3"/>
+    <rect class="fs" x="466" y="304" width="140" height="44" rx="3"/>
+    <rect class="fs" x="616" y="304" width="140" height="44" rx="3"/>
+    <rect class="fs" x="766" y="304" width="138" height="44" rx="3"/>
+    <text class="ft" x="86" y="331" text-anchor="middle" font-size="12" fill="#fff">1 客户是谁</text>
+    <text class="ft" x="236" y="331" text-anchor="middle" font-size="12" fill="#fff">2 成功标准</text>
+    <text class="ft" x="386" y="331" text-anchor="middle" font-size="12" fill="#fff">3 先问什么</text>
+    <text class="ft" x="536" y="331" text-anchor="middle" font-size="12" fill="#fff">4 平台映射</text>
+    <text class="ft" x="686" y="331" text-anchor="middle" font-size="12" fill="#fff">5 竞品对照</text>
+    <text class="ft" x="835" y="331" text-anchor="middle" font-size="12" fill="#fff">6 边界下一步</text>
+    <text class="ft" x="460" y="372" text-anchor="middle" font-size="12" fill="#6b7380">园区常见：充电运营为主，叠加综合能源</text>
+    <text class="ft" x="460" y="392" text-anchor="middle" font-size="12" fill="#6b7380">综合体 / 城投常见：城市停车为主，叠加充电运营</text>
+  </svg>
+</section>
+
+<section id="s3">
+  <h2>3. 充电运营</h2>
+  <p>基于公开信息的场景作业。假想客户：青岛某产业园区要建对外或对内充电。</p>
+  <table>
+    <thead><tr><th style="width:18%">步骤</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>客户是谁</td><td>园区老板或物业、场站运营负责人、信息化。不是个人车主。</td></tr>
+      <tr><td>成功标准</td><td>能计费、能对账、枪坏了有闭环、车主能找到并能启动。</td></tr>
+      <tr><td>先问什么</td><td>桩是谁的、谁负责运营、车从哪来、现在用哪套系统、配电是否已按充电负荷核准。</td></tr>
+      <tr><td>平台映射</td><td>计费与对账、告警与工单、找桩 / 启动（车企或 App）。</td></tr>
+      <tr><td>到此为止</td><td>不算该园区利用率，不报服务费和工期。</td></tr>
+      <tr><td>下一步</td><td>看计费对账单、工单闭环、场站负荷或功率策略；向客户要场站清单和现有系统名称。区域谁交付，公开材料看不到，见面问接口人。</td></tr>
+    </tbody>
+  </table>
+
+  <h3>客户已有方案时的对照</h3>
+  <table>
+    <thead>
+      <tr><th>客户已有条件</th><th>需要先核实</th><th>公开信息能对比到哪</th><th>承诺边界</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>场站已接入云快充</td>
+        <td>痛点在分账、运维，还是找不到车</td>
+        <td>云快充官网强调给运营商的系统、多品牌接入、分账和流量〔4〕</td>
+        <td>不承诺无脑替换、无缝迁移</td>
+      </tr>
+      <tr>
+        <td>在比较设备采购价格（常提到星星）</td>
+        <td>比的是设备还是运营品牌</td>
+        <td>2026 年 1 月前后报道：万帮上市主体偏设备，运营曾剥离至万帮太乙〔3〕</td>
+        <td>不贬低设备，不报内部成本</td>
+      </tr>
+      <tr>
+        <td>只按全国装机规模做选择</td>
+        <td>要的是网络还是一套中台</td>
+        <td>联盟 2025-12 运营桩（枪）特来电 89.9 万〔2〕；年报终端约 90 万、2025 充电量约 196 亿度〔1〕</td>
+        <td>不把枪、终端、连接当成同一个数</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="sec-ref">本节依据〔1〕〔2〕〔3〕〔4〕。枪（联盟月报）、终端（年报）、连接（云快充官网）不是同一口径。云快充官网「公用桩 TOP1」（称引自 2026 年 2 月联盟）与联盟 2025 年 12 月运营桩第 3 名不是同一口径。</p>
+</section>
+
+<section id="s4">
+  <h2>4. 综合能源</h2>
+  <p>按同一套逻辑推演，<strong>不是项目经历</strong>。假想：同一园区在充电之外还要谈光伏或储能。</p>
+  <table>
+    <thead><tr><th style="width:18%">步骤</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>客户是谁</td><td>厂务 / 能源负责人、老板。关心变压器和电费，不只是充电 App。</td></tr>
+      <tr><td>成功标准</td><td>尽量不超容、电费结构说得清、充电负荷能被看见、和光储能否放在一起看。</td></tr>
+      <tr><td>先问什么</td><td>报装容量、电价结构、现有光伏 / 储能、充电是不是最大冲击负荷。</td></tr>
+      <tr><td>平台映射</td><td>负荷监视、有序或群充、充电与光储的结算关系。</td></tr>
+      <tr><td>到此为止</td><td>不承诺省多少电费，不算回本，不把年报方向说成这个园区已经在赚钱。</td></tr>
+      <tr><td>下一步</td><td>向客户要容量和电价资料；看负荷和策略类页面。公开材料看不到具体大区能源交付团队。</td></tr>
+    </tbody>
+  </table>
+  <p class="note">转供电实习里，习惯先问计量和损耗约束再讲平台。那是物业向租户收费，不能当成光储充项目。</p>
+
+  <h3>客户已有方案时的对照</h3>
+  <table>
+    <thead>
+      <tr><th>客户已有条件</th><th>需要先核实</th><th>公开信息能对比到哪</th><th>承诺边界</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>充电之外还要上储能</td>
+        <td>容量和电价是否先够做充电策略</td>
+        <td>特来电年报有光储充放、群充等表述〔1〕</td>
+        <td>不保证回本，不保证已被电网调度赚钱</td>
+      </tr>
+      <tr>
+        <td>设备商主推微电网工程</td>
+        <td>买的是设备工程还是运营协同</td>
+        <td>万帮公开叙事含微电网、储能设备〔3〕</td>
+        <td>不比较谁的储能系统一定更好</td>
+      </tr>
+      <tr>
+        <td>希望沿用云快充管光储</td>
+        <td>现有平台是否已接光储表计</td>
+        <td>云快充官网近年也谈能源管理，细则需演示〔4〕</td>
+        <td>不断言一定能管或一定不能管</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="sec-ref">本节依据〔1〕〔3〕〔4〕。</p>
+</section>
+
+<section id="s5">
+  <h2>5. 城市停车</h2>
+  <p>按同一套逻辑推演，<strong>不是项目经历</strong>。假想：青岛某商业综合体或城投停车项目，充电做在车位上。</p>
+  <table>
+    <thead><tr><th style="width:18%">步骤</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>客户是谁</td><td>城投 / 停车公司、商场物业。决策常在车位和客流，不在度电。</td></tr>
+      <tr><td>成功标准</td><td>有位有枪对得上、引导得到、停车费和充电费能对账、该出的报表出得来。</td></tr>
+      <tr><td>先问什么</td><td>停车系统是谁的、路内还是场库、充电是增值还是考核项、和谁对账。</td></tr>
+      <tr><td>平台映射</td><td>车位状态、引导、停车与充电对账、监管或运营报表。</td></tr>
+      <tr><td>到此为止</td><td>无完整应标；不承诺对接现有停车中台的工期。</td></tr>
+      <tr><td>下一步</td><td>要停车系统厂商名称和接口意愿；问充电是主场景还是叠加。</td></tr>
+    </tbody>
+  </table>
+
+  <h3>客户已有方案时的对照</h3>
+  <table>
+    <thead>
+      <tr><th>客户已有条件</th><th>需要先核实</th><th>公开信息能对比到哪</th><th>承诺边界</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>已有停车系统</td>
+        <td>能否出车位状态、是否必须换充电系统</td>
+        <td>特来电、星星、云快充的公开材料里，停车与充电如何对接的细则都很少</td>
+        <td>不保证无缝对接某一停车品牌</td>
+      </tr>
+      <tr>
+        <td>认为多装桩即可</td>
+        <td>有位没枪、有枪没位谁负责</td>
+        <td>充电运营比的是枪和电；停车比的是车位和两套账〔2〕</td>
+        <td>不用全国桩数单独回答城投需求</td>
+      </tr>
+      <tr>
+        <td>报表要交给市政</td>
+        <td>要哪些指标、谁盖章</td>
+        <td>公开年报〔1〕不代替某个城市的监管口径</td>
+        <td>不承诺满足尚未见到的考核表</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="sec-ref">本节依据〔1〕〔2〕。停车对接细则公开材料不足，不展开未核过的厂商对比。</p>
+</section>
+
+<section id="s6">
+  <h2>6. 参考文献</h2>
+  <ol class="refs">
+    <li>青岛特锐德电气股份有限公司. 2025 年年度报告[R]. 巨潮资讯网, 2026-04-09.</li>
+    <li>中国电动汽车充电基础设施促进联盟. 2025 年 12 月全国电动汽车充换电基础设施运行情况[R]. 2026-01.</li>
+    <li>万帮数字能源股份有限公司港股招股书及相关公开报道[R/OL]. 2026-01.</li>
+    <li>云快充. 公司官网[EB/OL]. https://www.ykccn.com/ . 查阅日期: 2026-08-23.</li>
+  </ol>
+  <p class="foot">检索和排版用过 Cursor / Codex，数字和判断按文献核对。作者：司旭焱 · 山东工商学院自动化 · 2027 届 · 期望青岛。GitHub：github.com/sixuyan。用 Chrome 打开本文件即可本地演示。</p>
+</section>
+
+</main>
+</body>
+</html>
